@@ -163,12 +163,12 @@ namespace VectorMan
         {
             Console.WriteLine("-----------------------First Part-------------------------------------------");
             //CreatePoints(120);
-            Console.WriteLine($"How many elements would you like inside your new container? Please enter a valid positive number: ");           
+            Console.WriteLine($"How many elements would you like inside your new container? \nPlease note, the default is 100, so if you do not enter a valid number the container will contain 100 elements.  \nPlease enter a valid positive number: ");           
             Point[] newPointsContainer = CreatePoints();
             PrintPoints(newPointsContainer);
             Console.WriteLine("\n\n");
             Console.WriteLine("-----------------------Second Part------------------------------------------");
-            Console.WriteLine($"The closest Euclidean distance between (100) random Two-Dimensional Points: |{FindClosest(newPointsContainer)}|");
+            Console.WriteLine($"The closest Euclidean distance between ({newPointsContainer.Length}) random Two-Dimensional Points: |{FindClosest(newPointsContainer)}|");
             Console.WriteLine("\n\n");
             Console.WriteLine("-----------------------Third And Fourth Part--------------------------------");
             Console.WriteLine("Now we will find the closest distance between (1000) random Three-Dimensional Points.");
